@@ -24,6 +24,15 @@ namespace Heist_Pt_2
             {
                 Joe, John, Bob, Bill, Sue, Serana
             };
+            Random r = new Random();
+
+            Bank bank = new Bank(r.Next(50_000, 1_000_000), r.Next(0, 100), r.Next(0, 100), r.Next(0, 100), true);
+
+            foreach (IRobber thief in rolodex)
+            {
+                Console.WriteLine();
+            }
+
             AddNewCrewMember();
 
             void AddNewCrewMember()
@@ -62,6 +71,10 @@ namespace Heist_Pt_2
                 {
                     AddNewCrewMember();
                 }
+                Console.WriteLine($"The most secure system is the {bank.MostSecure()}, and the least secure system is the {bank.LeastSecure()}");
+
+
+
 
 
             }

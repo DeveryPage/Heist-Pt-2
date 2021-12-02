@@ -7,6 +7,7 @@ namespace Heist_Pt_2.RobberTypes
         string Name { get; set; }
         int SkillLevel { get; set; }
         int PercentageCut { get; set; }
+
         void PerformSkill(Bank bank);
 
     }
