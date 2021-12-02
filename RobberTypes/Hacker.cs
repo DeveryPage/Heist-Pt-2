@@ -20,5 +20,11 @@ namespace Heist_Pt_2.RobberTypes
                 Console.WriteLine($"{Name} is hacking the alarm system. Decreased security {SkillLevel}");
             }
         }
+        public Hacker(string name, int skillLevel, int percentageCut)
+        {
+            Name = name;
+            SkillLevel = skillLevel;
+            PercentageCut = percentageCut;
+        }
     }
 }

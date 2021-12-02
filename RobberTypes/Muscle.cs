@@ -19,5 +19,11 @@ namespace Heist_Pt_2.RobberTypes
                 Console.WriteLine($"{Name} is taking care of the gaurds. Decreased security {SkillLevel}");
             }
         }
+        public Muscle(string name, int skillLevel, int percentageCut)
+        {
+            Name = name;
+            SkillLevel = skillLevel;
+            PercentageCut = percentageCut;
+        }
     }
 }

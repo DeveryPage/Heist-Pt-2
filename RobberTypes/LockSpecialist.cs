@@ -20,5 +20,11 @@ namespace Heist_Pt_2.RobberTypes
                 Console.WriteLine($"{Name} is unlocking the safe. Decreased security {SkillLevel}");
             }
         }
+        public LockSpecialist(string name, int skillLevel, int percentageCut)
+        {
+            Name = name;
+            SkillLevel = skillLevel;
+            PercentageCut = percentageCut;
+        }
     }
 }
